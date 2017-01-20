@@ -34,7 +34,8 @@ class Greeting extends Component {
   render() {
     return (
       <Text>Hello {this.props.name}!</Text>
-    );
+      //打印两个属性  <Text>Hello {this.props.name}，{this.props.sex}!</Text>
+    );
   }
 }
 
@@ -44,6 +45,7 @@ class LotsOfGreetings extends Component {
       <View style={{alignItems: 'center'}}>
         <Greeting name='Rexxar' />
         <Greeting name='Jaina' />
+        //声明两个属性<Greeting name='Jaina' sex = 'man'/>
         <Greeting name='Valeera' />
       </View>
     );
